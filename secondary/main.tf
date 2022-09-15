@@ -31,7 +31,7 @@ data "tfe_outputs" "outputs" {
   workspace    = "output-test-primary"
 }
 
-
+/*
 resource "azurerm_storage_blob" "example" {
   name                   = "hello-world.txt"
   storage_account_name   = data.tfe_outputs.outputs.values.storage_account_name
@@ -39,5 +39,5 @@ resource "azurerm_storage_blob" "example" {
   type                   = "Block"
   source                 = "${path.module}/files/hello-world.txt"
 }
-
+*/
 
